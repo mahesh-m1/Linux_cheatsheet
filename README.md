@@ -17,11 +17,11 @@
 | 7   | [**System and Hardware information**](#system-and-hardware-information) |
 | 8   | [**Search Files**](#search-files)                                       |
 | 9   | [**SSH**](#ssh)                                                         |
-| 10  | [**Vi/Vim-commands**](#vi/vim-commands)                                 |
-| 11  | [**Top/TaskManager Command**](#Top-Command)                             |
-| 12  | [**Kill Command**](#Kill-Command)                                       |
-| 13  | [**History Command**](#History-Command)                                 |
-| 14  | [**Curl Command**](#Curl-Command)                                       |
+| 10  | [**Vi/Vim-commands**](#vivim-commands)                                  |
+| 11  | [**Top/TaskManager Command**](#toptaskmanager-command)                  |
+| 12  | [**Kill Command**](#kill-command)                                       |
+| 13  | [**History Command**](#history-command)                                 |
+| 14  | [**Curl Command**](#curl-command)                                       |
 
 ### User Information
 
@@ -237,54 +237,54 @@
    ```bash
    rm -rf myDir
    ```
-6. **touch**: The touch command is is used to create, change and modify timestamps of a file without any content.
+    6. **touch**: The touch command is is used to create, change and modify timestamps of a file without any content.
    1. **Create a new file:** You can create a single file at a time using touch command. The file created is an empty file.
-       ```bash
+    ```bash
        touch file_name
-       ```
+    ```
    2. **Create multiple files:** You can create the multiple numbers of files at the same time.
        ```bash
        touch file1_name file2_name file3_name
        ```
    3. **Change access time:** The touch command with `a` option is used to change the access time of a file.
-       ```bash
+    ```bash
        touch -a file_name
-       ```
+    ```
    4. **Change modification time:** The touch command with `m` option is used to change the modified time.
-       ```bash
+    ```bash
        touch -m file_name
-       ```
+    ```
    5. **Use timestamp of other file:** The touch command with `r` option is used to get timestamp of another file.
-       ```bash
+    ```bash
        touch -r file2 file1
-       ```
-
-       In the above example, we get the timestamp of file1 for file2.
+    ```
+        
+    In the above example, we get the timestamp of file1 for file2.
 
    6. **Create file with Specific time:** The touch command with 't' option is used to create a file with specified time.
-       ```bash
+    ```bash
        touch -t 1911010000 file_name
-       ```
-7. **cat**: The cat command is used to create single or multiple files, view contain of file, concatenate files and redirect output in terminal or files.
-     ```bash
-     $ cat [OPTION] [FILE]...
-     ```
+    ```
+    7. **cat**: The cat command is used to create single or multiple files, view contain of file, concatenate files and redirect output in terminal or files.
+    ```bash
+        $ cat [OPTION] [FILE]...
+    ```
    1. **Create a file:** Used to create a file with specific name, content and press exit using `CTRL + D`
-       ```bash
+    ```bash
        cat > file_name1.txt
        Hello, How are you?
-       ```
+    ```
    2. **View file contents:** You can view contents of a single or more files by mentioning the filenames.
 
-       ```bash
+    ```bash
        cat file_name1 file_name2
-       ```
+    ```
    3. **More & Less options:** If a file having a large number of content that won’t fit in the output terminal then `more` & `less` options can be used to indiate additional content.
 
-       ```bash
+    ```bash
        cat file_name1.txt | more
        cat file_name1.txt | less
-       ```
+    ```
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -406,9 +406,9 @@ sudo chgrp Administrator test.txt
 
 1.  **Display network information:** `ifconfig` command is used to display all network information(ip address, ports etc)
 
-```cmd
-ifconfig -a
-```
+    ```cmd
+    ifconfig -a
+    ```
 
 2.  **Test connection to a remote machine:** Send an echo request to test connection of a remote machine.
 
@@ -448,29 +448,29 @@ ifconfig -a
 
 1. **Install package:**
 
-```cmd
-yum install package_name
-```
+    ```cmd
+    yum install package_name
+    ```
 
 2. **Package description:**
 The info command is used to display brief details about a package.
 
-```cmd
-yum info package_name
-```
+    ```cmd
+    yum info package_name
+    ```
 
 3. **Uninstall package:**
 The remove command is used to remove or uninstall package name.
-```cmd
-yum remove package_name
-```
+    ```cmd
+    yum remove package_name
+    ```
 4. **Install package from local file:**
 
 It is also possible to install package from local file named package_name.rpm.
 
-```cmd
-rpm -i package_name.rpm
-```
+   ```cmd
+    rpm -i package_name.rpm
+   ```
 
 5. **Install from source code:**
 
@@ -749,7 +749,8 @@ sudo sshd service restart
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### Vi/Vim-commands
+### Vi/Vim-commands  
+
 
 Vi editor is the most popular text editor from the early days of Unix. Whereas Vim(Vi IMproved) is an improved version of vi editor to be used in CLI (command line interface) for mainly text editing tasks in many configuration files. Some of the other alternatives are Elvis, Nvi, Nano, Joe, and Vile.
 It has two main operation modes,
@@ -1074,7 +1075,7 @@ kill -p <process_id>
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### History Command Options
+### History Command
 The history command shows a list of previously issued commands.
 
 #### history Command Options
@@ -1222,3 +1223,8 @@ curl -O http://example.com/file.zip
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+
+
+
+[def]: #vi/Vim-commands
